@@ -12,7 +12,7 @@ import ReactFlow, {
 import 'reactflow/dist/style.css';
 
 const initialNodes = [
-  { id: '1',sourcePosition: 'right', position: { x: 20, y: 200 }, data: { label: 'Start' } },
+  { id: '1',sourcePosition: 'right', position: { x: 20, y: 200 }, data: { label: 'Start', link: 'https://www.youtube.com/' }, style: { background: '#6495ED' } },
   { id: '2',sourcePosition: 'right',targetPosition: 'left', position: { x: 300, y: 200 }, data: { label: 'get_pdf' } },
   { id: '3',sourcePosition: 'right',targetPosition: 'left', position: { x: 550, y: 200 }, data: { label: 'page-37' } },
   { id: '4',sourcePosition: 'right',targetPosition: 'left', position: { x: 800, y: 200 }, data: { label: 'image_processing-37' } },  
@@ -32,7 +32,9 @@ const initialEdges = [
     target: '2',
         sourcePosition: 'right', // Specify the source position to 'right'
     targetPosition: 'left', // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,
+       color: '#000000' 
+      },
 
   },
   {
@@ -41,7 +43,7 @@ const initialEdges = [
     target: '3',
     sourcePosition: 'right', // Specify the source position to 'right'
     targetPosition: 'left', // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   },
   {
@@ -50,7 +52,7 @@ const initialEdges = [
     target: '4',
     sourcePosition: 'right', // Specify the source position to 'right'
     targetPosition: 'left', // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   },
   {
@@ -61,7 +63,7 @@ const initialEdges = [
     targetPosition: 'left', // Specify the target position to 'left'
     type: 'smoothstep',
     animated: true,
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   }, 
   {
@@ -72,7 +74,7 @@ const initialEdges = [
     targetPosition: 'left',
     type: 'smoothstep',
     animated: true, // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   },
   {
@@ -83,7 +85,7 @@ const initialEdges = [
     targetPosition: 'left',
     type: 'smoothstep',
     animated: true, // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   },
   {
@@ -92,7 +94,7 @@ const initialEdges = [
     target: '8',
         sourcePosition: 'right', // Specify the source position to 'right'
     targetPosition: 'left', // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   },
   {
@@ -101,7 +103,7 @@ const initialEdges = [
     target: '9',
         sourcePosition: 'right', // Specify the source position to 'right'
     targetPosition: 'left', // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   }, 
   {
@@ -110,7 +112,7 @@ const initialEdges = [
     target: '10',
         sourcePosition: 'right', // Specify the source position to 'right'
     targetPosition: 'left', // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   },
   {
@@ -121,7 +123,7 @@ const initialEdges = [
     targetPosition: 'left',
     type: 'smoothstep',
     animated: true, // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   }, 
   {
@@ -132,7 +134,7 @@ const initialEdges = [
     targetPosition: 'left',
     type: 'smoothstep',
     animated: true, // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   },
   {
@@ -144,7 +146,7 @@ const initialEdges = [
     targetPosition: 'left',
     type: 'smoothstep',
     animated: true, // Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   },
   {
@@ -154,7 +156,7 @@ const initialEdges = [
     target: '12',
         sourcePosition: 'right', // Specify the source position to 'right'
     targetPosition: 'left',// Specify the target position to 'left'
-    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20, color: '#000000' },
+    markerEnd: { type: MarkerType.ArrowClosed, width: 20, height: 20,  color: '#000000'},
 
   },
 ];
@@ -168,14 +170,23 @@ export default function App() {
     [setEdges],
   );
 
+  const onNodeClick = (event, node) => {
+    if (node.data.link) {
+      window.location.href = node.data.link;
+    }
+  };
+
   return (
-    <div style={{ width: '100vw', height: '100vh' }}>
+    <div style={{ width: '100vw', height: '100vh',
+    // background: '#1a202c' 
+    }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
+        onNodeClick={onNodeClick}
       >
         <Controls />
         <MiniMap />
